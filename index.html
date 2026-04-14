@@ -5,31 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Colômbia</title>
 
-  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <style>
-    /* Cores da Colômbia */
-    .bg-colombia {
-      background: linear-gradient(to right, #fcd116, #003893, #ce1126);
-    }
-
-    /* Banner com overlay escuro */
-    .banner {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                  url('assets/img/bg-colombia.jpg') center/cover;
-      height: 100vh;
-      color: white;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-colombia shadow fixed-top">
   <div class="container">
-    <a class="navbar-brand d-flex align-items-center text-white" href="#">
+    <a class="navbar-brand d-flex align-items-center text-white" href="index.html">
       <img src="assets/img/colombia.png" height="40" class="me-2 rounded-circle">
       <strong>Colômbia</strong>
     </a>
@@ -40,89 +24,139 @@
 
     <div class="collapse navbar-collapse" id="menu">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link text-white" href="#sobre">Sobre</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#turismo">Turismo</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#cultura">Cultura</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="turismo.html">Turismo</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="comidas.html">Comidas</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="cultura.html">Cultura</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- Banner Impactante -->
+
 <header class="banner d-flex align-items-center text-center">
-  <div class="container fade-in">
+  <div class="container">
     <h1 class="display-3 fw-bold">Descubra a Colômbia</h1>
-    <p class="lead mb-4">Um país vibrante cheio de cultura, natureza e história</p>
-    <a href="#sobre" class="btn btn-colombia">Explorar</a>
+    <p class="lead">Um país vibrante cheio de cultura, natureza e história</p>
   </div>
 </header>
 
-<!-- Sobre -->
-<section id="sobre" class="container my-5 pt-5">
-  <h2 class="text-center mb-4">Sobre a Colômbia</h2>
-  <p class="text-center">
-    A Colômbia é um país da América do Sul conhecido por sua diversidade cultural,
-    paisagens incríveis e produção de café. Sua capital é Bogotá e o país se destaca
-    pela música, dança e festivais coloridos.
-  </p>
-</section>
+<section id="sobre" class="container my-5">
+  <div class="row align-items-center">
 
-<!-- Turismo -->
-<section id="turismo" class="container my-5">
-  <h2 class="text-center mb-5">Pontos Turísticos</h2>
-
-  <div class="row g-4">
-
-    <div class="col-md-4">
-      <div class="card">
-        <img src="assets/img/cartagena.jpg" class="card-img-top">
-        <div class="card-body text-center">
-          <h5>Cartagena</h5>
-          <p>Cidade histórica com praias paradisíacas.</p>
-        </div>
-      </div>
+    <div class="col-md-6">
+      <h2 class="mb-4">Sobre a Colômbia</h2>
+      <p>
+        A Colômbia é um país localizado na América do Sul, conhecido por sua diversidade cultural,
+        geográfica e econômica. Sua capital, Bogotá, é o principal centro político e financeiro do país.
+      </p>
+      <p>
+        O território colombiano abriga diferentes paisagens, como a Floresta Amazônica, a Cordilheira
+        dos Andes e o litoral do Caribe, tornando-o um dos países mais biodiversos do mundo.
+      </p>
+      <p>
+        Além disso, a Colômbia se destaca mundialmente pela produção de café, pela música e por suas
+        tradições culturais influenciadas por povos indígenas, africanos e europeus.
+      </p>
     </div>
 
-    <div class="col-md-4">
-      <div class="card">
-        <img src="assets/img/bogota.jpg" class="card-img-top">
-        <div class="card-body text-center">
-          <h5>Bogotá</h5>
-          <p>Capital rica em cultura e museus.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card">
-        <img src="assets/img/medellin.jpg" class="card-img-top">
-        <div class="card-body text-center">
-          <h5>Medellín</h5>
-          <p>A cidade da eterna primavera.</p>
-        </div>
-      </div>
+    <div class="col-md-6 text-center">
+      <img src="assets/img/colombia-paisagem.jpg" class="img-fluid rounded shadow">
     </div>
 
   </div>
 </section>
 
-<!-- Cultura -->
-<section id="cultura" class="bg-light py-5">
-  <div class="container text-center">
-    <h2 class="mb-4">Cultura Colombiana</h2>
-    <p>
-      A cultura colombiana é marcada por ritmos como a cumbia e o vallenato,
-      além de uma culinária rica e festivais animados como o Carnaval de Barranquilla.
-    </p>
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Principais Cidades</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card shadow h-100">
+          <img src="assets/img/bogota.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Bogotá (Capital)</h5>
+            <p>
+              Centro político e econômico do país, com infraestrutura moderna, universidades,
+              aeroportos internacionais e grande sistema de transporte urbano.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow h-100">
+          <img src="assets/img/medellin.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Medellín</h5>
+            <p>
+              Destaque em inovação urbana, com metrô, teleféricos e forte desenvolvimento
+              tecnológico e industrial.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow h-100">
+          <img src="assets/img/cartagena.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Cartagena</h5>
+            <p>
+              Importante polo turístico com hotéis, portos e um centro histórico preservado,
+              sendo um dos destinos mais visitados do Caribe.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
-<!-- Rodapé -->
+<section class="container my-5">
+  <div class="row align-items-center">
+
+    <div class="col-md-6">
+      <img src="assets/img/bioma.jpg" class="img-fluid rounded shadow">
+    </div>
+
+    <div class="col-md-6">
+      <h2 class="mb-4">Biomas</h2>
+      <p>
+        A Colômbia apresenta grande diversidade de biomas, incluindo florestas tropicais,
+        savanas e regiões montanhosas. A Amazônia colombiana abriga uma rica biodiversidade,
+        enquanto os Andes criam diferentes ecossistemas ao longo do país.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="container my-5">
+  <div class="row align-items-center">
+
+    <div class="col-md-6">
+      <h2 class="mb-4">Clima</h2>
+      <p>
+        O clima da Colômbia é predominantemente tropical, variando conforme a altitude.
+        Regiões mais baixas são quentes e úmidas, enquanto áreas montanhosas possuem clima
+        mais ameno. O país apresenta períodos de chuva e seca ao longo do ano.
+      </p>
+    </div>
+
+    <div class="col-md-6">
+      <img src="assets/img/clima.jpg" class="img-fluid rounded shadow">
+    </div>
+
+  </div>
+</section>
+
 <footer class="bg-dark text-white text-center p-3">
   <p>Trabalho escolar - 2026 🇨🇴</p>
 </footer>
 
-<!-- Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
