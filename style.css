@@ -12,9 +12,9 @@ body {
 
 .banner {
     height: 100vh;
-    background: url('assets/img/bg-colombia.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('assets/img/bg-colombia.jpg') center/cover;
     color: white;
-    position: relative;
 }
 
 
@@ -59,13 +59,30 @@ h2 {
 
 
 section {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
+section:nth-child(even) {
+    background-color: #f8f9fa;
+}
 
-footer {
-    margin-top: 40px;
+section h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-simple {
+    background: linear-gradient(90deg, #00102b, #10006b); /* azul da Colômbia */
+    color: #ffffff;
+    padding: 20px 0;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+}
+
+.footer-simple p {
+    margin: 0;
 }
 
 
@@ -134,3 +151,15 @@ footer {
     object-fit: cover;
     width: 100%;
 }
+
+/* Seções */
+.section-light {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.section-dark {
+    background-color: #f1f5f9;
+    padding: 80px 0;
+}
+
