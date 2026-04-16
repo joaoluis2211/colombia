@@ -1,15 +1,15 @@
-/* Reset básico */
+
 body {
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     background-color: #f8f9fa;
 }
 
-/* Navbar personalizada (cores da bandeira da Colômbia) */
+
 .bg-colombia {
     background: linear-gradient(90deg, #fcd116, #003893, #ce1126);
 }
 
-/* Banner */
+
 .banner {
     height: 100vh;
     background: url('assets/img/bg-colombia.jpg') no-repeat center center/cover;
@@ -17,7 +17,7 @@ body {
     position: relative;
 }
 
-/* Overlay escuro no banner */
+
 .banner::before {
     content: "";
     position: absolute;
@@ -28,47 +28,47 @@ body {
     background: rgba(0, 0, 0, 0.5);
 }
 
-/* Conteúdo do banner acima do overlay */
+
 .banner .container {
     position: relative;
     z-index: 2;
 }
 
-/* Cards */
+
 .card {
     border: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efeito hover nos cards */
+
 .card:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* Imagens dos cards */
+
 .card img {
     height: 200px;
     object-fit: cover;
 }
 
-/* Títulos */
+
 h2 {
     font-weight: 700;
 }
 
-/* Seções */
+
 section {
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-/* Footer */
+
 footer {
     margin-top: 40px;
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     .banner {
         height: 60vh;
@@ -77,4 +77,60 @@ footer {
     .card img {
         height: 180px;
     }
+}
+
+.timeline {
+    position: relative;
+    padding-left: 30px;
+    border-left: 3px solid #ccc;
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -11px;
+    top: 5px;
+    width: 18px;
+    height: 18px;
+    background-color: #ffc107; 
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+
+.timeline-content {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+
+.timeline-content:hover {
+    transform: translateX(5px);
+}
+
+
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .timeline-content {
+        padding: 15px;
+    }
+}
+
+
+.timeline-content img {
+    height: 150px;
+    object-fit: cover;
+    width: 100%;
 }
