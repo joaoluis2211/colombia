@@ -51,6 +51,11 @@ body {
     height: 200px;
     object-fit: cover;
 }
+.comida-card img {
+    height: 25rem;
+    object-fit: contain;
+    padding-top: 16px;
+}
 
 
 h2 {
@@ -153,13 +158,61 @@ section h2 {
 }
 
 /* Seções */
+.section-dark {
+    background-color: #feffbf;
+}
+
 .section-light {
     background-color: #ffffff;
-    padding: 80px 0;
 }
 
-.section-dark {
-    background-color: #f1f5f9;
-    padding: 80px 0;
+/*-----------------------------------------------------*/
+/* Estilo para as etiquetas (badges) */
+.culture-badge {
+    display: inline-block;
+    background-color: #fecb00; /* Amarelo Colômbia */
+    color: #000;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
+/* Efeito nas imagens */
+.img-container {
+    transition: transform 0.4s ease;
+}
+
+.timeline-item:hover .img-container {
+    transform: scale(1.03) rotate(1deg);
+}
+
+.timeline-item h2 {
+    color: #003893; /* Azul Colômbia */
+}
+
+/* Timeline central (opcional - cria uma linha vertical no desktop) */
+@media (min-width: 768px) {
+    .timeline {
+        position: relative;
+    }
+    /* Linha decorativa no fundo */
+    .timeline::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 2px;
+        height: 100%;
+        background: #e9ecef;
+        z-index: -1;
+    }
+}
+
+/* Ajuste de imagem para manter padrão */
+.timeline-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
