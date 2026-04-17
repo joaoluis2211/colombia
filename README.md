@@ -18,9 +18,3 @@ Este projeto consiste na criação de um site informativo sobre a Colômbia, uti
 - Seções sobre cultura, turismo e curiosidades
 - Layout responsivo (adaptável para celular e desktop)
 - Uso de componentes do Bootstrap (navbar, cards, grid, etc.)
-
-## 📷 Preview
-
-*(adicione aqui um print do site depois)*
-
-## 📂 Estrutura do projeto
